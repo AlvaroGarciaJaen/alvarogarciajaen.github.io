@@ -8,7 +8,7 @@ jobs:
         steps:
             - add_ssh_keys:
                 fingerprints:
-                    - 27:e8:68:b4:35:ef:35:98:12:a4:a0:53:c0:01:f6:27
+                    - "27:e8:68:b4:35:ef:35:98:12:a4:a0:53:c0:01:f6:27"
             - checkout
             - run:
                 name: Get current site
