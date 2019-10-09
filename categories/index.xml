@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on alvaro@ntwrk</title>
-    <link>http://alvaro.network/categories/</link>
+    <link>https://alvaro.network/categories/</link>
     <description>Recent content in Categories on alvaro@ntwrk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://alvaro.network/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alvaro.network/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
