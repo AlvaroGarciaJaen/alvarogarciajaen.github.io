@@ -1,3 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "en"
 title = "alvaro@ntwrk"
+theme = "m10c"
