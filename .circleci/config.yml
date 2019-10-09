@@ -5,6 +5,8 @@ jobs:
         docker:
             - image: cibuilds/hugo:latest
         working_directory: ~/alvarogarciajaen.github.io
+        branches:
+            only: source
         steps:
             - add_ssh_keys:
                 fingerprints:
@@ -32,13 +34,3 @@ jobs:
                     git add .
                     git commit --allow-empty -m "Trigger deployment"
                     git push -q git@github.com:AlvaroGarciaJaen/alvarogarciajaen.github.io.git master
-
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - source
