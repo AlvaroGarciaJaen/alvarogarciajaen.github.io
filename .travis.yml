@@ -5,16 +5,16 @@ install:
 
 script:
   - cd ~
-  - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com:AlvaroGarciaJaen/alvarogarciajaen.github.io.git public
+  - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/alvarogarciajaen.github.io.git public
   - cd AlvaroGarciaJaen/alvarogarciajaen.github.io
-  - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com:AlvaroGarciaJaen/hugo-theme-m10c.git themes/m10c
+  - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/hugo-theme-m10c.git themes/m10c
   - HUGO_ENV=production hugo -d ~/public
   - git config credential.helper 'cache --timeout=120'
   - git config user.email "deploy@alvaro.network"
   - git config user.name "Deployment Bot"
   - git add .
   - git commit --allow-empty -m "Trigger deployment"
-  - git push -q https://alvaro-deploy:${GITHUB_TOKEN}@github.com:AlvaroGarciaJaen/alvarogarciajaen.github.io.git master
+  - git push -q https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/alvarogarciajaen.github.io.git master
 
 
 
