@@ -1,4 +1,4 @@
-baseURL = "http://alvaro.network/"
+baseURL = "https://alvaro.network/"
 languageCode = "en"
 title = "alvaro@ntwrk"
 theme = "m10c"
