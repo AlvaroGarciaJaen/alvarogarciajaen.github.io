@@ -10,9 +10,8 @@ script:
   - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/alvarogarciajaen.github.io.git public
   - cd alvarogarciajaen.github.io
   - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/hugo-theme-m10c.git themes/m10c
-  - cd /home/travis/build/AlvaroGarciaJaen/
-  - HUGO_ENV=production hugo -d public -t m10c
-  - cd public
+  - HUGO_ENV=production hugo -d ../public -t m10c
+  - cd ../public
   - git config credential.helper 'cache --timeout=120'
   - git config user.email "deploy@alvaro.network"
   - git config user.name "Deployment Bot"
