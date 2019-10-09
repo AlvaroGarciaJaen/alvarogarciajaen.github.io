@@ -4,7 +4,11 @@ install:
   - sudo dpkg -i /tmp/hugo.deb
 
 script:
+  - pwd
+  - tree
   - cd ~
+  - pwd
+  - tree
   - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/alvarogarciajaen.github.io.git public
   - cd AlvaroGarciaJaen/alvarogarciajaen.github.io
   - git clone -b master https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/hugo-theme-m10c.git themes/m10c
