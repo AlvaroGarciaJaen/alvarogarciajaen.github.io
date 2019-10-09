@@ -17,13 +17,13 @@ script:
   - git config user.name "Deployment Bot"
   - git add .
   - git commit --allow-empty -m "Trigger deployment"
-  - git push -q https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/alvarogarciajaen.github.io.git master
 
 
 
 deploy:
   - provider: script
-    script: id
+    script:
+        - git push -q https://alvaro-deploy:${GITHUB_TOKEN}@github.com/AlvaroGarciaJaen/alvarogarciajaen.github.io.git master
     skip_cleanup: true
     on:
       branch: source # or master if you are using the two-repository approach
