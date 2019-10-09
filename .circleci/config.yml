@@ -6,7 +6,8 @@ jobs:
             - image: cibuilds/hugo:latest
         working_directory: ~/alvarogarciajaen.github.io
         branches:
-            only: source
+            only: 
+                - source
         steps:
             - add_ssh_keys:
                 fingerprints:
